@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────────
+# PyLine — requirements.txt
+# Do NOT install this manually — use install.bat
+# llama-cpp-python is handled separately by the installer
+# ─────────────────────────────────────────────────────────────
+
+# Model download from HuggingFace
+huggingface_hub
+
+# System & utilities
+psutil
+wmi ; sys_platform == "win32"
+
+# Voice (TTS)
+piper-tts
+sounddevice
+numpy
+
+# Screen & GUI
+Pillow
+screen-brightness-control ; sys_platform == "win32"
+pygame
+
+# Office file creation
+python-docx
+openpyxl
+python-pptx
+reportlab
